@@ -51,7 +51,7 @@ const updateCalFile = () => {
       console.log(events.length + ' events')
 
       cal['PRODID'] = 'TimeEdit'
-      cal['X-WR-CALNAME'] = 'Timeplan DATA-A H2017, HVL'
+      cal['X-WR-CALNAME'] = process.env.CAL_NAME
       cal['VEVENT'] = events
 
       fs.writeFile(process.cwd() + '/cal/cal.ics', ical2json.revert(converted), () => {
@@ -61,7 +61,7 @@ const updateCalFile = () => {
     .catch(err => console.log('Could not get calendar.'))
 }
 
-setTimeout(updateCalFile, 150000)
+setTimeout(updateCalFile, 300000)
 updateCalFile()
 
 const app = express()

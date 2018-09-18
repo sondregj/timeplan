@@ -4,7 +4,8 @@ const subjects = {
   'MAT108': 'Grunnleggende matematikk for dataingeniører',
   'DAT103': 'Datamaskiner og operativsystemer',
   'DAT108': 'Programmering og webapplikasjoner',
-  'MAT102': 'Diskret matematikk og statistikk'
+  'MAT102': 'Diskret matematikk og statistikk',
+  'BØA101': 'Bitcoin - blokkjedeteknologi og den digitale økonomien'
 }
 
 module.exports = subjects
